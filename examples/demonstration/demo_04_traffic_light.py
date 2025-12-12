@@ -16,6 +16,15 @@ Example:
 
 def main():
     # Write your code here
+    color = input("Enter the color of the light: ")
+    if color == "red":
+        print("Stop!")
+    elif color == "yellow":
+        print("Slow down.")
+    elif color == "green":
+        print("Go!")
+    else:
+        print("Invalid color.")
     pass
 
 if __name__ == '__main__':

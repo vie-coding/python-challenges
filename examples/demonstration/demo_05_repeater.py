@@ -14,6 +14,9 @@ Example:
 
 def main():
     # Write your code here
+    word = input("Enter a word: ")
+    count = int(input("Enter a number: "))
+    print(word * count)
     pass
 
 if __name__ == '__main__':

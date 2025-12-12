@@ -12,7 +12,14 @@ Example:
 """
 
 def main():
-    # Write your code here
+    age = int(input("Enter your age: "))
+    if age >= 18:
+        print("You can vote.")
+    else:
+        print("Too young to vote.")
+
+
+
     pass
 
 if __name__ == '__main__':

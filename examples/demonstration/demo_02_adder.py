@@ -15,6 +15,14 @@ Example:
 
 def main():
     # Write your code here
+    number1 = int(input("Input first number: "))
+    number2 = int(input("Input second number: "))
+
+    sum = number1 + number2
+
+    print(f"Input 1: {number1}")
+    print(f"Input 2: {number2}")
+    print(f"Output: {sum}")
     pass
 
 if __name__ == '__main__':

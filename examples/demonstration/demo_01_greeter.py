@@ -12,6 +12,9 @@ Example:
 
 def main():
     # Write your code here
+    name = input("Enter you name: ")
+    
+    print( f" Hello, {name}! Nice to meet you")
     pass
 
 if __name__ == '__main__':

@@ -1,20 +1,25 @@
 """
 Challenge 2: Grade Converter
-----------------------------------------
+----------------------------
+TODO:
+1. Ask the user to enter a score (integer between 0 and 100).
+2. If the score is less than 0 or greater than 100, print "invalid".
+3. Otherwise, convert the score to a letter grade:
+   - 90 to 100: "A"
+   - 80 to 89:  "B"
+   - 70 to 79:  "C"
+   - 60 to 69:  "D"
+   - Below 60:  "F"
+4. Print the letter grade.
 
-**Goal:** chained `elif`.
-
-* **Input:** integer score `0–100`
-* **Output:** `A` (90–100), `B` (80–89), `C` (70–79), `D` (60–69), `F` (<60)
-* **Invalid input:** if <0 or >100 print `invalid`
-* **Example:** `85` → `B`
+Example:
+    Input: 85
+    Output: B
 """
 
-# Write your solution below
-# ---------------------------
-
 def main():
-    pass  # TODO: Implement your solution here
+    # Write your code here
+    pass
 
 if __name__ == '__main__':
     main()

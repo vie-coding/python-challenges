@@ -1,0 +1,8 @@
+# Teacher's tools
+manager.py
+challenges.md
+
+# System files
+__pycache__/
+*.pyc
+.DS_Store

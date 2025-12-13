@@ -18,6 +18,20 @@ Example:
 
 def main():
     # Write your code here
+    kg = float(input())
+
+    if kg < 0:
+        print("invalid")
+
+    elif 0 < kg <= 1:
+        print("$50")
+    elif 1 < kg <= 5:
+        print("$80")
+    elif 5 < kg <= 20:
+        print("$150")
+    else:
+        print("$250")
+
     pass
 
 if __name__ == '__main__':

@@ -18,6 +18,19 @@ Example:
 """
 
 def main():
+    score = float(input("Input: "))
+
+
+    if  90 <= score <= 100:
+        print("Output: A")
+    elif 80 <= score < 90:
+        print("Output: B")
+    elif 70 <= score < 80:
+        print("Output: C")
+    elif 60 <= score < 70:
+        print("Output: D")
+    else:
+        print("Output: F")
     # Write your code here
     pass
 

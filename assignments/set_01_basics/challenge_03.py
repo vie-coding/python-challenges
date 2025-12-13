@@ -17,6 +17,15 @@ Examples:
 
 def main():
     # Write your code here
+    year = int(input("Input:"))
+
+    if year % 4 == 0:
+        if year % 100 == 0 and year % 400 != 0:
+            print("Not a Leap Year")
+        else:
+            print("Leap Year")
+    else:
+        print("Not A Leap Year") 
     pass
 
 if __name__ == '__main__':

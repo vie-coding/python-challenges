@@ -13,7 +13,21 @@ Example:
 """
 
 def main():
-    # Write your code here
+    value  = int(input("Input:"))
+
+    if value % 2 == 0:
+        if value >= 0:
+            print("Output: even postive")
+        else:
+            print("Output: even and negative")
+
+    else:
+        if value < 0:
+            print("Output: odd and negative")
+        else:
+            print("Output: odd and positive")
+
+    
     pass
 
 if __name__ == '__main__':

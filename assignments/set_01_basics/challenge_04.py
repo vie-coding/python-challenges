@@ -19,6 +19,20 @@ Example:
 
 def main():
     # Write your code here
+    a = float(input())
+    b = float(input())
+    c = float(input())
+
+    if (a + b > c) and (a + c > b) and (b + c > a):
+        print("valid triangle")
+        if a == b and a == c and b == c:
+            print("equilateral")
+        elif a == b or a == c or b == c:
+            print("Isosceles")
+        else:
+            print ("scalene")
+    else:
+        print("invalid")
     pass
 
 if __name__ == '__main__':

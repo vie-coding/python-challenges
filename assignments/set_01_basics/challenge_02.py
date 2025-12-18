@@ -21,7 +21,9 @@ def main():
     score = float(input("Input: "))
 
 
-    if  90 <= score <= 100:
+    if score < 0 or score > 100:
+        print("invalid")
+    elif  90 <= score <= 100:
         print("Output: A")
     elif 80 <= score < 90:
         print("Output: B")

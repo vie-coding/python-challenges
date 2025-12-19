@@ -10,7 +10,7 @@ TODO:
    - 70 to 79:  "C"
    - 60 to 69:  "D"
    - Below 60:  "F"
-4. Print the letter grade.
+4. Print the letter grade./
 
 Example:
     Input: 85

@@ -19,8 +19,15 @@ Example:
 """
 
 def main():
-    # Write your code here
-    pass
+    base = int(input())
+    exponent = int(input())
+    result = 1
+    if exponent < 0:
+        print("invalid")
+    else:
+        for i in range(exponent):
+            result *= base
+        print(result)
 
 if __name__ == '__main__':
     main()

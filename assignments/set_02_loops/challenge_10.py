@@ -28,7 +28,12 @@ Hint: For row i (1 to N):
 """
 
 def main():
-    # Write your code here
+    x = int(input())
+    if x < 1:
+        print("invalid")
+    else:
+        for i in range(1, x + 1):
+            print(" " * (x - i) + "*" * (2 * i - 1))
     pass
 
 if __name__ == '__main__':

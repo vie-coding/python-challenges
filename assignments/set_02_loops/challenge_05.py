@@ -18,8 +18,13 @@ Example:
 """
 
 def main():
-    # Write your code here
-    pass
+    x = int(input())
+    if x < 1:
+        print("invalid")
+        return
+    for i in range(1, x + 1):
+        if i % 2 == 0:
+            print(i)
 
 if __name__ == '__main__':
     main()

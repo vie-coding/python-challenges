@@ -14,8 +14,18 @@ Example:
 """
 
 def main():
-    # Write your code here
-    pass
+    x =  int(input())
+    sum = 0 
+
+    if x < 0 :
+        print("invalid")
+
+    else:
+        for i in range(1, x + 1):
+            sum += i
+        print(sum)
+
+
 
 if __name__ == '__main__':
     main()

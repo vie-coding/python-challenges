@@ -17,8 +17,15 @@ Example:
 """
 
 def main():
-    # Write your code here
-    pass
+    x = int(input())
+
+    if x < 1:
+        print("invalid")
+    else:
+        for i in range(x, 0, -1):
+            print(i)
+
+
 
 if __name__ == '__main__':
     main()

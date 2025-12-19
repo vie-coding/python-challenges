@@ -20,8 +20,19 @@ Example:
 """
 
 def main():
-    # Write your code here
-    pass
+    x = int(input())
+    counter = 0
+    if x < 2:
+        print("invalid")
+    else :
+        for i in range(2, x):
+            if x % i == 0:
+                counter += 1
+        if counter != 0:
+            print("Not a prime")
+        else:
+            print("Prime")
+              
 
 if __name__ == '__main__':
     main()

@@ -38,7 +38,15 @@ def main():
     numbers = [3, 0, 1]  # Missing: 2
 
     # Write your code here
+
+    for i in range(len(numbers) + 1):
+        if i in numbers:
+            continue 
+        else: 
+            print("Output:" , i)
+            break 
     pass
+
 
 if __name__ == '__main__':
     main()

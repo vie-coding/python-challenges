@@ -35,7 +35,22 @@ def main():
     list2 = [2, 4, 6, 8]
 
     # Write your code here
+    
+    list3 = []
+    for i in list1:
+        list3.append(i)
+
+    for x in list2:
+        list3.append(x)
+    
+    for i in range(1,len(list3)):
+        j =  i - 1
+        while(j >= 0 and list3[j + 1] < list3[j]):
+            list3[j] , list3[j + 1] = list3[j + 1] , list3[j]
+            j -= 1
+    print("Output:" , list3)
     pass
+
 
 if __name__ == '__main__':
     main()

@@ -39,7 +39,24 @@ def main():
     k = 2
 
     # Write your code here
+    x = k % len(numbers)
+
+
+    if len(numbers) == 0:
+        return numbers
+    elif k > 0:
+        for i in range(x):
+            numbers.insert(0, numbers.pop())
+
+    else:
+        for i in range(x):
+            numbers.append(numbers[0])
+
+    print("Output:" , numbers)
+
     pass
+
+
 
 if __name__ == '__main__':
     main()

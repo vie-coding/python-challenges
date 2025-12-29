@@ -37,6 +37,24 @@ def main():
     numbers = [10, 5, 8, 20, 15]
 
     # Write your code here
+        if len(numbers) == 0:
+            return -1
+    max_num = numbers[0]
+
+    for i in numbers:
+        if i > max_num:
+            max_num = i
+
+    for i in numbers:
+        if i  == max_num:  
+            numbers.remove(i)
+
+    sec_max = numbers[0]
+    for i in numbers:
+        if i > sec_max:
+            sec_max = i
+    
+    print("Output:" , sec_max)
     pass
 
 if __name__ == '__main__':

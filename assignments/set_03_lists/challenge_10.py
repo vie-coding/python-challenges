@@ -51,7 +51,15 @@ def main():
     # Test data
     nums = [-2, 1, -3, 4, -1, 2, 1, -5, 4]
 
-    # Write your code here
+    sum_value = nums[0]
+    maxi = nums[0]
+
+    for i in range(1,len(nums)):
+        maxi = max(maxi + nums[i],nums[i])
+        sum_value = max(sum_value,maxi)
+            
+            
+    print("Output:", sum_value)
     pass
 
 if __name__ == '__main__':

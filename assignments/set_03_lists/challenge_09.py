@@ -41,7 +41,24 @@ def main():
     # Test data
     nums = [2, 2, 1, 1, 1, 2, 2]
 
-    # Write your code here
+    count = 0
+    element = -1
+    
+    for i in range(len(nums)):
+        if count == 0:
+            element = nums[i]
+        else:
+            if nums[i] == element:
+                vote += 1
+            else:
+                vote -= 1
+                
+    counter = 0 
+    for i in range(len(nums)):
+        if nums[i] == element:
+            counter += 1
+    if counter > len(nums)//2:
+        print("Output:", element)
     pass
 
 if __name__ == '__main__':

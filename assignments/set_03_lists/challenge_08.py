@@ -39,6 +39,12 @@ def main():
     target = 9
 
     # Write your code here
+
+    for i in nums:
+        diff = target - i
+        if diff in nums:
+            print("Output: [", i ,',', diff, "]")
+            break 
     pass
 
 if __name__ == '__main__':

@@ -37,8 +37,20 @@ def main():
     numbers = [10, 5, 8, 20, 15]
 
     # Write your code here
-        if len(numbers) == 0:
+    if len(numbers) == 0:
             return -1
+    counter = 0
+
+    for i in range(1,len(numbers)):
+        j = i - 1
+        if numbers[j] == numbers[i]:
+            counter += 1
+    if counter == len(numbers):
+        print("Output: invalid")
+        return 
+
+
+    
     max_num = numbers[0]
 
     for i in numbers:

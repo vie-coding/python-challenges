@@ -33,10 +33,29 @@ Hint: Track the current element and its count.
 
 def main():
     # Test data
-    data = ['a', 'a', 'a', 'b', 'b', 'c', 'c', 'c', 'c']
+	data = ['a', 'a', 'a', 'b', 'b', 'c', 'c', 'c', 'c']
+	data2 = []
 
     # Write your code here
-    pass
+	count = 1
+	
+
+	for i in range(1,len(data)):
+		j = i - 1
+		if data[i] == data[j]:
+			count += 1
+		else:
+			data2.append(data[j])
+			data2.append(count)
+			count = 1 
+		if i == len(data) - 1:
+			data2.append(data[i])
+			data2.append(count)	
+			
+	print("Output:" , data2)
+
+
+
 
 if __name__ == '__main__':
     main()

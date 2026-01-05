@@ -32,10 +32,11 @@ Example:
 """
 
 def main():
-    x = int(input())
+    x = int(input("Input:"))
     if x < 1:
         print("invalid")
     else:
+       print("Output:)
         for i in range(1, x + 1):
             if i % 3 == 0 and i % 5 == 0:
                 print("FizzBuzz")

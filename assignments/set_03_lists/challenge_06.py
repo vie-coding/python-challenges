@@ -37,8 +37,26 @@ def main():
     list1 = [1, 2, 2, 1]
     list2 = [2, 2]
 
-    # Write your code here
-    pass
+    freq = {}
+    result = []
+
+    # Count frequencies of elements in list1
+    for x in list1:
+        if x in freq:
+            freq[x] += 1
+        else:
+            freq[x] = 1
+
+    # Check elements of list2 against the frequency counter
+    for y in list2:
+        if y in freq and freq[y] > 0:
+            result.append(y)
+            freq[y] -= 1
+
+    print(result)
+
+if __name__ == '__main__':
+    main()
 
 if __name__ == '__main__':
     main()

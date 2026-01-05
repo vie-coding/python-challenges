@@ -14,7 +14,8 @@ Example:
 """
 
 def main():
-    x =  int(input())
+     x = int(input("Input:"))
+    
     sum = 0 
 
     if x < 0 :
@@ -23,7 +24,7 @@ def main():
     else:
         for i in range(1, x + 1):
             sum += i
-        print(sum)
+        print("Output:",sum)
 
 
 

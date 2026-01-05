@@ -19,15 +19,15 @@ Example:
 """
 
 def main():
-    base = int(input())
-    exponent = int(input())
+    base = int(input("Input:"))
+    exponent = int(input("Input:"))
     result = 1
     if exponent < 0:
         print("invalid")
     else:
         for i in range(exponent):
             result *= base
-        print(result)
+        print("Ouput:", result)
 
 if __name__ == '__main__':
     main()

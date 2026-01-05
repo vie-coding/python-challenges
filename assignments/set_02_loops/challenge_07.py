@@ -19,11 +19,13 @@ Example:
 """
 
 def main():
-    x = int(input())
+    x = int(input("Input:"))
     count = 0
     for i in str(x):
+        if i == "-":
+            continue
         count += 1
-    print(count)
+    print("Output:",count)
 
 if __name__ == '__main__':
     main()

@@ -18,7 +18,8 @@ Example:
 """
 
 def main():
-    x = int(input())
+    x = int(input("Input:"))
+    print("Output:)
     if x < 1:
         print("invalid")
         return

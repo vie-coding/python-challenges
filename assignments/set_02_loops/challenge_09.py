@@ -20,18 +20,19 @@ Example:
 """
 
 def main():
-    x = int(input())
+    x = int(input("Input:"))
     counter = 0
     if x < 2:
         print("invalid")
     else :
+       
         for i in range(2, x):
             if x % i == 0:
                 counter += 1
         if counter != 0:
-            print("Not a prime")
+            print("Output: Not a prime")
         else:
-            print("Prime")
+            print("Output: Prime")
               
 
 if __name__ == '__main__':

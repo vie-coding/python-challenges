@@ -18,11 +18,11 @@ Example:
 """
 
 def main():
-    x = int(input())
+    x = int(input("Input:"))
     factorial = 1
     for i in range(1, x + 1):
         factorial *= i
-    print(factorial)
+    print("Output:",factorial)
     pass
 
 if __name__ == '__main__':

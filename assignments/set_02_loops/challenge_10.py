@@ -28,10 +28,11 @@ Hint: For row i (1 to N):
 """
 
 def main():
-    x = int(input())
+    x = int(input("Input:"))
     if x < 1:
         print("invalid")
     else:
+        print("Output:)
         for i in range(1, x + 1):
             print(" " * (x - i) + "*" * (2 * i - 1))
     pass

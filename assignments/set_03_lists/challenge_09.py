@@ -47,6 +47,7 @@ def main():
     for i in range(len(nums)):
         if count == 0:
             element = nums[i]
+            count = 1
         else:
             if nums[i] == element:
                 vote += 1

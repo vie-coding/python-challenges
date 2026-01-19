@@ -23,6 +23,14 @@ def main():
     # Test dictionary
     original = {"a": 1, "b": 2, "c": 3}
 
+    reverted = {
+    }
+
+    for i in original:
+        reverted[original[i]] = i
+
+    print(reverted)
+
     # Write your code here
     pass
 

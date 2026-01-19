@@ -40,8 +40,21 @@ def main():
     # Test lists
     keys = ["name", "age", "city", "country"]
     values = ["Alice", 25, "NYC", "USA"]
-
+    v = {
+    }
     # Write your code here
+    if len(keys) > len(values):
+        for i in range(len(values)):
+            v[keys[i]] = values[i]
+            
+    elif len(keys) == len(values):
+        for i in range(len(values)):
+            v[keys[i]] = values[i]
+        
+    else:
+        for i in range(len(keys)):
+            v[values[i]] = keys[i]
+        
     pass
 
 if __name__ == '__main__':

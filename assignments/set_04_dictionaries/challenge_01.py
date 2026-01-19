@@ -24,7 +24,21 @@ Hint: Use dictionary[key] to access values and dictionary[key] = value to update
 
 def main():
     # Write your code here
-    pass
+    grades = {
+        "Alice" : 85
+        "Bob" : 92
+    "Charlie" : 90
+    "Stacy" : 99
+    "Sarah" : 100
+        
+    }
+    print("Output:")
+    print("All students:",grades)
+    gradeds["Charlie"] = 75
+    print("Charlie's grade: 75")
+    print(" After update:", grades)
+
+    print(grades)
 
 if __name__ == '__main__':
     main()

@@ -25,8 +25,24 @@ Hint: Use .lower() to make words lowercase. Use .split() to break the sentence i
 def main():
     # Test sentence
     sentence = "The quick brown fox jumps over the lazy dog"
-
-    # Write your code here
+    sentence1 = sentence.lower()
+    dicti = {
+        
+    }
+    
+    print(sentence1)
+    
+    x = sentence1.split(' ')
+    
+    x.sort()
+    for i in x:
+        if i in  dicti:
+            dicti[i] += 1
+        else:
+            dicti[i] = 1
+            
+    print("Output:",dicti)
+    
     pass
 
 if __name__ == '__main__':

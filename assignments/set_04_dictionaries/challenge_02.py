@@ -25,6 +25,21 @@ def main():
     # Test string
     text = "hello world"
 
+    thisdict = {
+    }
+
+    for i in text:
+        if i == ' ':
+            continue
+        if i in thisdict:
+            thisdict[i] += 1
+        else:
+            thisdict[i] = 1
+            
+        print("Output:" , thisdict)
+            
+        
+
     # Write your code here
     pass
 

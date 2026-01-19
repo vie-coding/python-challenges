@@ -25,8 +25,16 @@ Hint: Keep track of the maximum value and its corresponding key as you iterate.
 def main():
     # Test dictionary
     scores = {"apple": 5, "banana": 8, "cherry": 3, "date": 8}
+    x = scores["apple"]
 
-    # Write your code here
+    for i in scores.values():
+        if i > x:
+            x = i
+    for i in scores:
+        if scores[i] == x:
+            print("Output:",i)
+            break
+    # Write your code her
     pass
 
 if __name__ == '__main__':

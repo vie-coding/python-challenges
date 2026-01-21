@@ -29,7 +29,7 @@ def main():
     for i in original:
         reverted[original[i]] = i
 
-    print(reverted)
+    print("Output:" , reverted)
 
     # Write your code here
     pass

@@ -54,6 +54,8 @@ def main():
     else:
         for i in range(len(keys)):
             v[values[i]] = keys[i]
+
+    print("Output:", v)
         
     pass
 

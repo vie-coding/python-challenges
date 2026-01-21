@@ -36,6 +36,26 @@ def main():
     words = ["eat", "tea", "tan", "ate", "nat", "bat"]
 
     # Write your code here
+
+    anagrams = {}  # dictionary to store groups
+
+    for word in words:
+     
+        key = ''.join(sorted(word))
+
+       
+        if key not in anagrams:
+            anagrams[key] = []
+
+        
+        anagrams[key].append(word)
+
+  
+    for key, group in anagrams.items():
+        print(f"Output: {key}: {group}")
+
+
+
     pass
 
 if __name__ == '__main__':

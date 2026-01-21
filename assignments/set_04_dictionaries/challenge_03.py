@@ -32,9 +32,28 @@ def main():
     # Test dictionaries
     dict1 = {"a": 100, "b": 200, "c": 300}
     dict2 = {"a": 300, "b": 200, "d": 400}
+    dict3 = {
+        
+    }
+
+    for i in dict1:
+        if i in dict2:
+            dict1[i] += dict2[i]
+            dict3[i] = dict1[i]
+        else:
+            pass 
+        
+    for x in dict2:
+        if x in dict1:
+            pass
+        else:
+            dict3[x] = dict2[x]
+    print("Output",dict3)
 
     # Write your code here
     pass
 
 if __name__ == '__main__':
     main()
+
+    

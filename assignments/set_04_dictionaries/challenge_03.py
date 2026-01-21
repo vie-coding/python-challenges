@@ -41,7 +41,7 @@ def main():
             dict1[i] += dict2[i]
             dict3[i] = dict1[i]
         else:
-            pass 
+            dict3[i] = dict1[i]
         
     for x in dict2:
         if x in dict1:

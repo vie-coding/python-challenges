@@ -9,3 +9,6 @@ __pycache__/
 
 # Development and test files
 .working/
+
+# Demo media files
+examples/demonstration/organize/

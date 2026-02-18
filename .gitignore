@@ -6,3 +6,6 @@ challenges.md
 __pycache__/
 *.pyc
 .DS_Store
+
+# Development and test files
+.working/

@@ -1,0 +1,4 @@
+# OpenCode ignore file - auto-created
+# Unignore .working directory so it appears in file picker
+!.working/
+!.working/**
